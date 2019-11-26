@@ -13,13 +13,13 @@ import {
 export default class SideBar extends Component {
     render() {
         return (
-            <div style={{ width: 250, display: 'flex', justifyContent: 'flex-start', paddingLeft: 25, paddingTop: 50, textAlign: 'left', height: '100%', backgroundColor: '#343a40', left: 0, top: 0, position: 'fixed' }}>
-                <Nav defaultActiveKey="/information" className="flex-column">
+            // <div style={{ width: 250, display: 'flex', justifyContent: 'flex-start', paddingLeft: 25, paddingTop: 50, textAlign: 'left', height: '100%', backgroundColor: '#343a40', left: 0, top: 0, position: 'fixed' }}>
+                <Nav defaultActiveKey="/information" className="sider-header flex-column">
                     <Nav.Link href="/Menu">Restaurant</Nav.Link>
-                    <Nav.Link href="/Contect">Contect us</Nav.Link>
+                    <Nav.Link href="/Contact">Contect us</Nav.Link>
                     {this.props.children}
                 </Nav>
-            </div>
+            // </div>
         )
     }
 }

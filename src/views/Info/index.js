@@ -25,7 +25,7 @@ export default class Home extends Component {
         }
     }
     BeforSubmit = async () => {
-        this.setState({ 
+        this.setState({
             isEdit: false,
             name: '',
             address: '',
@@ -150,7 +150,7 @@ export default class Home extends Component {
     render() {
         console.log(this.state.isEdit)
         return (
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingLeft: 350, height: '100%', flexDirection: 'column', width: '100%' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '100%', paddingRight: '20px' }}>
                 {/* <div>lasted id is {this.state.lastId + 1}</div> */}
                 <div style={{ width: '100%', display: 'flex', flexDirection: 'row' }}>
                     <div style={{ width: '10%' }}>
@@ -171,7 +171,7 @@ export default class Home extends Component {
 
                     <div style={{ width: '14%' }}></div>
                 </div>
-                <div style={{ width: '100%', display: 'flex', flexDirection: 'row', marginTop: 31 , minWidth:500 }}>
+                <div style={{ width: '100%', display: 'flex', flexDirection: 'row', marginTop: 31, minWidth: 500 }}>
                     {/* <div id = "font" style={{ width: '14%' }}>id</div> */}
                     <div id="font" style={{ width: '18%' }}>name</div>
                     <div id="font" style={{ width: '18%' }}>address</div>
@@ -191,7 +191,7 @@ export default class Home extends Component {
                     </div>
                     <div style={{ width: '14%' }}></div>
                 </div>
-                <div style={{ height: 1, backgroundColor: 'grey', width: '100%', marginRight: 100, marginTop: 16, marginBottom: 16, minWidth: 500 }}></div>
+                <div style={{ height: 1, backgroundColor: 'grey', width: '100%', marginTop: 16, marginBottom: 16 }}></div>
                 <div style={{ width: '100%', minWidth: 500 }}>
                     {this.renderTable()}
                     <Modal show={this.state.modalVisible} onHide={() => this.handleModal()}>

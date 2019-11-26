@@ -8,7 +8,11 @@
 .App-logo {
   height: 40vmin;
 }
-
+iframe{
+  width: 700px;
+  height: 370px;
+  border: #282c34;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -18,6 +22,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@media (min-width: 768px) {
+  .navbar-left {
+    height: 100vh !important;
+  }
 }
 
 .App-link {
